@@ -1,15 +1,16 @@
 {
-  "name": "markdow-it-katex-ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@frallen/markdow-it-katex",
+  "version": "0.0.0-development",
   "type": "module",
+  "main": "./src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "prepare": "husky",
     "lint": "eslint .",
     "lintfix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "semantic": "semantic-release"
   },
   "keywords": [
     "markdown",
@@ -20,8 +21,12 @@
     "markdown-it"
   ],
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./dist/build.js",
@@ -37,6 +42,7 @@
     "katex": "^0.16.18"
   },
   "devDependencies": {
+    "semantic-release": "^24.2.0",
     "@eslint/js": "^9.13.0",
     "@rollup/plugin-terser": "^0.4.4",
     "@types/eslint__js": "^8.42.3",
@@ -45,10 +51,10 @@
     "@types/tape": "^5.8.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
     "dotenv": "^16.4.5",
     "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.11.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
