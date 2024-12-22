@@ -1,3 +1,3 @@
 export default {
-  branches: ["main", { name: "next", prerelease: true }],
+  branches: [{ name: "master" }],
 };
