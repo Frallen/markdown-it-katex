@@ -1,0 +1,7 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+auto-imports.d.ts
+components.d.ts
+pnpm-lock.yaml
