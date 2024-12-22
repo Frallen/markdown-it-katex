@@ -1,6 +1,6 @@
 {
   "name": "@frallen/markdow-it-katex",
-  "version": "0.0.0-development",
+  "version": "main",
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
