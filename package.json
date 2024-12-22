@@ -1,5 +1,5 @@
 {
-  "name": "@frallen/markdow-it-katex",
+  "name": "@elastic-code/markdow-it-katex",
   "version": "main",
   "type": "module",
   "main": "./src/index.ts",
