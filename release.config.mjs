@@ -1,3 +1,4 @@
 export default {
-  branches: ["main", { name: "next", prerelease: true }],
+  branches: ["main", "refs/tags/*"],
+  tagFormat: "v${version}",
 };
