@@ -32,10 +32,6 @@
       "import": "./dist/build.js",
       "types": "./dist/build.d.ts",
       "require": "./dist/build.umd.js"
-    },
-    "./build.css": {
-      "import": "./dist/build.css",
-      "require": "./dist/build.css"
     }
   },
   "dependencies": {
