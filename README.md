@@ -16,7 +16,9 @@ Install the plugin
 ```
 npm i @elastic-code/markdow-it-katex
 ```
+
 or
+
 ```
 pnpm add @elastic-code/markdow-it-katex
 ```
@@ -28,7 +30,7 @@ import md from "markdown-it";
 //import library
 import mk from "@elastic-code/markdow-it-katex";
 //import styles
-import "@elastic-code/markdow-it-katex/build.css"
+import "@elastic-code/markdow-it-katex/build.css";
 
 md.use(mk);
 
