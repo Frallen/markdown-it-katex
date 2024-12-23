@@ -9,9 +9,7 @@ for rendering output.
 
 /*jslint node: true */
 "use strict";
-import "katex/dist/katex.min.css";
 import katex, { type KatexOptions } from "katex";
-
 // @ts-expect-error md types
 import MarkdownIt from "@types/markdown-it/index";
 
