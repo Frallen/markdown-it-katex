@@ -36,10 +36,15 @@ md.use(mk);
 // double backslash is required for javascript strings, but not html input
 const result = md.render("# Math Rulez! \n  $\\sqrt{3x-1}+(1+x)^2$");
 ```
-Add styles
-```html
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" crossorigin="anonymous">
+Add styles
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css"
+  integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0"
+  crossorigin="anonymous" />
 ```
 
 `KaTeX` options can be supplied with the second argument to use.
