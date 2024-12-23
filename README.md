@@ -2,8 +2,6 @@
 
 Add Math to your Markdown
 
-[![Build Status](https://travis-ci.org/waylonflinn/markdown-it-katex.svg?branch=master)](https://travis-ci.org/waylonflinn/markdown-it-katex)
-
 [KaTeX](https://github.com/Khan/KaTeX) is a faster alternative to MathJax. This plugin makes it easy to support in your markdown.
 
 Need convincing?
@@ -13,23 +11,24 @@ Need convincing?
 
 ## Usage
 
-Install markdown-it
-
-```
-pnpm add markdown-it
-```
-
 Install the plugin
 
 ```
-pnpm add markdown-it-katex
+npm i @elastic-code/markdow-it-katex
+```
+or
+```
+pnpm add @elastic-code/markdow-it-katex
 ```
 
 Use it in your javascript
 
 ```ts
 import md from "markdown-it";
-import mk from "markdown-it-katex-next";
+//import library
+import mk from "@elastic-code/markdow-it-katex";
+//import styles
+import "@elastic-code/markdow-it-katex/build.css"
 
 md.use(mk);
 
@@ -39,7 +38,7 @@ const result = md.render("# Math Rulez! \n  $\\sqrt{3x-1}+(1+x)^2$");
 
 `KaTeX` options can be supplied with the second argument to use.
 
-```javascript
+```ts
 md.use(mk, { throwOnError: false, errorColor: " #cc0000" });
 ```
 

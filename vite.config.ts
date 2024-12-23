@@ -17,7 +17,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "md-katex-ts",
       fileName: "build",
-      formats: ["es", "cjs", "umd"],
+      formats: ["es", "umd" /*"cjs",*/],
     },
     //https://rollupjs.org/tutorial/#code-splitting
     //При множественных входных точках обязательно выделяет чанки
